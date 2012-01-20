@@ -1,0 +1,17 @@
+# Class: sudo
+#   This module manages sudo
+#
+# Definition:
+#   -
+#
+# Parameters:
+#   -
+#
+# Actions:
+#   Installs the sudoers etc.
+#
+# Requires:
+#   -
+#
+# Sample Usage:
+#   -

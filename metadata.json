@@ -1,0 +1,23 @@
+{
+  "name": "dhoppe-sudo",
+  "author": "Dennis Hoppe",
+  "description": "Sudo Module for Debian, Ubuntu",
+  "license": "GPLv2",
+  "project_page": "http://github.com/dhoppe/puppet-sudo",
+  "source": "git://github.com/dhoppe/puppet-sudo",
+  "summary": "Sudo Module",
+  "version": "0.0.1",
+  "checksums": {
+    "Modulefile": "e39d3abbf0a6ae73ec2110271417e310",
+    "README": "6baf26585e8323647c1c5e32af9443d5",
+    "files/lenny/common/etc/sudoers": "886a31324a415f243e889a7380a0c422",
+    "files/maverick/etc/sudoers": "6017a8d7c908a7e3ae2f9ae68591a926",
+    "files/natty/etc/sudoers": "4eced72a34fec723b115a9dd3d1e09c2",
+    "files/squeeze/etc/sudoers": "b03e680bbcf73ae6096745be2f6631eb",
+    "manifests/init.pp": "ace549a88e56fbbcac2c8d170fd6af2f",
+    "spec/spec.opts": "a600ded995d948e393fbe2320ba8e51c",
+    "spec/spec_helper.rb": "ca19ec4f451ebc7fdb035b52eae6e909",
+    "tests/init.pp": "63f528ee1d1698fadd336da35dd4ec7a"
+  },
+  "dependencies": []
+}
