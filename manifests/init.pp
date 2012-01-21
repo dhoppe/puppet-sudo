@@ -5,8 +5,8 @@ class sudo {
 			group   => root,
 			mode    => 0440,
 			source  => [
-				"puppet:///modules/sudo/$::lsbdistcodename/$::hostname/etc/sudoers",
-				"puppet:///modules/sudo/$::lsbdistcodename/common/etc/sudoers"
+				"puppet:///modules/sudo/${::lsbdistcodename}/${::hostname}/etc/sudoers",
+				"puppet:///modules/sudo/${::lsbdistcodename}/common/etc/sudoers"
 			],
 			require => Package["sudo"],
 		}
@@ -15,7 +15,7 @@ class sudo {
 			owner   => root,
 			group   => root,
 			mode    => 0440,
-			source  => "puppet:///modules/sudo/$::lsbdistcodename/etc/sudoers",
+			source  => "puppet:///modules/sudo/${::lsbdistcodename}/etc/sudoers",
 			require => Package["sudo"],
 		}
 
