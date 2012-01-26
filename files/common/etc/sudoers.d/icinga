@@ -1,0 +1,14 @@
+#
+# THIS FILE IS MANAGED BY PUPPET
+# /etc/puppet/modules/production/sudo/files/common/etc/sudoers.d/icinga
+#
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+Cmnd_Alias	ICINGA = /sbin/ethtool, /usr/bin/apt-get update, /usr/bin/apt-get --simulate upgrade, /usr/lib/nagios/plugins/*, /usr/local/lib/nagios/plugins/*
+
+# User privilege specification
+nagios		ALL=NOPASSWD: ICINGA
