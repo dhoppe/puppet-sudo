@@ -6,9 +6,9 @@
   "project_page": "http://github.com/dhoppe/puppet-sudo",
   "source": "git://github.com/dhoppe/puppet-sudo",
   "summary": "Sudo Module",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "checksums": {
-    "Modulefile": "43d73699fbc7c85903edf988f0c52c6b",
+    "Modulefile": "bb14a57c957a08a9b9c6d906019a1c93",
     "README": "8543c5d95d25f3fbbfe494cc2fc45f42",
     "files/common/etc/sudoers.d/icinga": "2a4e15bc8bf472ffd0165177d81d3904",
     "files/common/etc/sudoers.d/nagios": "ba29679937fffc9107ae81efe0014476",
@@ -16,8 +16,8 @@
     "files/maverick/etc/sudoers": "6017a8d7c908a7e3ae2f9ae68591a926",
     "files/natty/etc/sudoers": "4eced72a34fec723b115a9dd3d1e09c2",
     "files/squeeze/etc/sudoers": "b03e680bbcf73ae6096745be2f6631eb",
-    "manifests/init.pp": "fc6d3d412b10b343e1b15196c528934b",
-    "manifests/service.pp": "976667a8111e0b32887cdaebde39fd54",
+    "manifests/init.pp": "c9924d14417004898bc4625cc5368758",
+    "manifests/service.pp": "09d97b21d9b646d0555ff1aa167fb18c",
     "spec/spec.opts": "a600ded995d948e393fbe2320ba8e51c",
     "spec/spec_helper.rb": "ca19ec4f451ebc7fdb035b52eae6e909",
     "tests/init.pp": "63f528ee1d1698fadd336da35dd4ec7a"

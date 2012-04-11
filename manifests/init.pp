@@ -1,48 +1,48 @@
 class sudo {
-	if $::lsbdistcodename == "lenny" {
-		file { "/etc/sudoers":
+	if $::lsbdistcodename == 'lenny' {
+		file { '/etc/sudoers':
 			owner   => root,
 			group   => root,
-			mode    => 0440,
+			mode    => '0440',
 			source  => [
 				"puppet:///modules/sudo/${::lsbdistcodename}/${::hostname}/etc/sudoers",
 				"puppet:///modules/sudo/${::lsbdistcodename}/common/etc/sudoers"
 			],
-			require => Package["sudo"],
+			require => Package['sudo'],
 		}
 	} else {
-		file { "/etc/sudoers":
+		file { '/etc/sudoers':
 			owner   => root,
 			group   => root,
-			mode    => 0440,
+			mode    => '0440',
 			source  => "puppet:///modules/sudo/${::lsbdistcodename}/etc/sudoers",
-			require => Package["sudo"],
+			require => Package['sudo'],
 		}
 
-		file { "/etc/sudoers.d":
+		file { '/etc/sudoers.d':
 			force   => true,
 			purge   => true,
 			recurse => true,
 			owner   => root,
 			group   => root,
-			mode    => 0440,
-			require => Package["sudo"],
+			mode    => '0440',
+			require => Package['sudo'],
 		}
 	}
 
-	file { "/usr/bin/sudo":
+	file { '/usr/bin/sudo':
 		owner   => root,
 		group   => root,
-		mode    => 4755,
+		mode    => '4755',
 	}
 
-	file { "/usr/sbin/visudo":
+	file { '/usr/sbin/visudo':
 		owner   => root,
 		group   => root,
-		mode    => 0755,
+		mode    => '0755',
 	}
 
-	package { "sudo":
+	package { 'sudo':
 		ensure => present,
 	}
 }
