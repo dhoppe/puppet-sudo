@@ -1,6 +1,6 @@
 #
 # THIS FILE IS MANAGED BY PUPPET
-# /etc/puppet/modules/production/sudo/files/maverick/etc/sudoers
+# <%= file %>
 #
 
 # /etc/sudoers
@@ -15,19 +15,17 @@ Defaults	env_reset
 # Host alias specification
 
 # User alias specification
+User_Alias	ADMIN = <%= admins.join(",") %>
 
 # Cmnd alias specification
 
 # User privilege specification
-hotkey		ALL=(ALL) ALL
 root		ALL=(ALL) ALL
+ADMIN		ALL=(ALL) ALL
 
 # Allow members of group sudo to execute any command
 # (Note that later entries override this, so you might need to move
 # it further down)
-# %sudo		ALL=(ALL) ALL
-#
-#includedir	/etc/sudoers.d
-
-# Members of the admin group may gain root privileges
 %admin		ALL=(ALL) ALL
+
+#includedir	/etc/sudoers.d

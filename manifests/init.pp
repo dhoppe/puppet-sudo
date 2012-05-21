@@ -1,11 +1,14 @@
 class sudo (
-  $source = $sudo::params::source
+  $admins  = $sudo::params::admins,
+  $content = $sudo::params::content,
+  $source  = $sudo::params::source
 ) inherits sudo::params {
 
   file { '/etc/sudoers':
     owner   => 'root',
     group   => 'root',
     mode    => '0440',
+    content => $content,
     source  => $source,
     require => Package['sudo'],
   }
