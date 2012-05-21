@@ -1,5 +1,5 @@
 name 'dhoppe-sudo'
-version '0.0.8'
+version '0.0.9'
 
 author 'Dennis Hoppe'
 license 'GPLv2'
