@@ -4,6 +4,8 @@ class sudo (
   $source  = $sudo::params::source
 ) inherits sudo::params {
 
+  validate_array(hiera('admin'))
+
   file { '/etc/sudoers':
     owner   => 'root',
     group   => 'root',

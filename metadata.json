@@ -6,17 +6,17 @@
   "project_page": "http://github.com/dhoppe/puppet-sudo",
   "source": "git://github.com/dhoppe/puppet-sudo",
   "summary": "Sudo Module",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "checksums": {
     "Gemfile": "d5ce5c80f3c31e583507eb80b61b7400",
-    "Modulefile": "87f67a76ef2124e1838b567f2371a23e",
+    "Modulefile": "fe13ca65c0fb62bbc91341c358239834",
     "README": "47c98d547501ef93e75ba35b1744fa72",
     "Rakefile": "17e38802c4cef92b76ce3c00b9e339ec",
     "examples/sudo.yaml": "86f624bdb4ea612fd3558c2181fc2cc0",
     "files/common/etc/sudoers.d/icinga": "2a4e15bc8bf472ffd0165177d81d3904",
     "files/common/etc/sudoers.d/nagios": "ba29679937fffc9107ae81efe0014476",
     "files/lenny/common/etc/sudoers": "886a31324a415f243e889a7380a0c422",
-    "manifests/init.pp": "61029677352a5cf40fddbd0f6143bf57",
+    "manifests/init.pp": "4807ea8db450227de2562bdd43e64b8d",
     "manifests/params.pp": "975d23b2133ff611124c6b36c8601df6",
     "manifests/service.pp": "9b2c2a9d5730de5fb24f304717b5f8e2",
     "spec/spec.opts": "a600ded995d948e393fbe2320ba8e51c",
@@ -26,5 +26,10 @@
     "templates/squeeze/etc/sudoers.erb": "ec3c014fb1b082caebcebbf414c84f0b",
     "tests/init.pp": "63f528ee1d1698fadd336da35dd4ec7a"
   },
-  "dependencies": []
+  "dependencies": [
+    {
+      "name": "dhoppe/puppet",
+      "version_requirement": "\u003e\u003d0.0.1"
+    }
+  ]
 }
