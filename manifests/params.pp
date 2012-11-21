@@ -1,6 +1,6 @@
 class sudo::params {
   case $::lsbdistcodename {
-    'squeeze', 'natty': {
+    'squeeze': {
       $admins  = hiera('admin')
       $content = template("sudo/${::lsbdistcodename}/etc/sudoers.erb")
       $source  = undef
