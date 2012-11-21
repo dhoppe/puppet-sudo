@@ -15,16 +15,14 @@ class sudo (
     require => Package['sudo'],
   }
 
-  if $::lsbdistcodename != 'lenny' {
-    file { '/etc/sudoers.d':
-      force   => true,
-      purge   => true,
-      recurse => true,
-      owner   => 'root',
-      group   => 'root',
-      mode    => '0440',
-      require => Package['sudo'],
-    }
+  file { '/etc/sudoers.d':
+    force   => true,
+    purge   => true,
+    recurse => true,
+    owner   => 'root',
+    group   => 'root',
+    mode    => '0440',
+    require => Package['sudo'],
   }
 
   file { '/usr/bin/sudo':
